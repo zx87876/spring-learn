@@ -17,10 +17,14 @@ ext {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.cloud:spring-cloud-gateway-webflux'
-	implementation 'org.springframework.cloud:spring-cloud-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'
+	compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.0'
+	compile group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.3.0'
+	compile group: 'javax.activation', name: 'activation', version: '1.1.1'
+
+	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
