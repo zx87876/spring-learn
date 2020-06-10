@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
 public class EurekaStateChangeListener {
 
 
-    private static final Log log = LogFactory.getLog(com.trustasia.EurekaStateChangeListener.class);
 
     @EventListener
     public void listen(EurekaInstanceCanceledEvent event) {

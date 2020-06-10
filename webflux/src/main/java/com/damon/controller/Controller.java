@@ -1,8 +1,6 @@
 package com.damon.controller;
 
 
-import com.trustasia.mpki.common.model.ViewData;
-import com.trustasia.phishingservice.service.PhishingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
